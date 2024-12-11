@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cursos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4fdf4;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #2e7d32;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 2.2rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #a5d6a7;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #2e7d32;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ccc;
+            padding: 0.8rem;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f4fdf4;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="formulario.html">Formulário</a>
+        <a href="dados_alunos.html">Dados dos Alunos</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="disciplinas.html">Disciplinas</a>
+    </nav>
+
+   
+
+    <section>
+        <h2>Cursos Lecionados Na Comercial</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Técnico de Informática de Gestão</td>
+                </tr>
+                <tr>
+                    <td>Técnico de Gestão de Recursos Humanos</td>
+                </tr>
+                <tr>
+                    <td>Técnico de Comércio</td>
+                </tr>
+                <tr>
+                    <td>Técnico de Contabilidade e Gestão</td>
+                </tr>
+                <tr>
+                    <td>Técnico de Finanças</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

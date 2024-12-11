@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dados-alunos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:   #f4fdf4;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #2e7d32;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 2.2rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #a5d6a7;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #2e7d32;
+        }
+
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .form-section img {
+            max-width: 150px;
+            border-radius: 10px;
+            border: 2px solid #2e7d32;
+        }
+
+        .form-section .info {
+            text-align: center;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .form-section .info p {
+            margin: 0.3rem 0;
+        }
+
+        .form-section form {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-section form label {
+            font-size: 1rem;
+            color: #2e7d32;
+        }
+
+        .form-section form input {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-section form button {
+            padding: 0.7rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #2e7d32;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-section form button:hover {
+            background-color: #388e3c;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ccc;
+            padding: 0.8rem;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f4fdf4;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="formulario.html">Formulário</a>
+        <a href="dados_alunos.html">Dados dos Alunos</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="disciplinas.html">Disciplinas</a>
+    </nav>
+
+   
+
+    <section id="dados-alunos">
+        <h2>Dados dos Alunos</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Turma</th>
+                    <th>Sala</th>
+                    <th>Curso</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João Silva</td>
+                    <td>1A</td>
+                    <td>101</td>
+                    <td>Técnico de Comércio</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Maria Oliveira</td>
+                    <td>1B</td>
+                    <td>102</td>
+                    <td>Administração</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Lucas Souza</td>
+                    <td>2A</td>
+                    <td>103</td>
+                    <td>Técnico de Finanças</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Ana Lima</td>
+                    <td>2B</td>
+                    <td>104</td>
+                    <td>Contabilidade</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Pedro Santos</td>
+                    <td>3A</td>
+                    <td>105</td>
+                    <td>Técnico de Gestão de Recursos Humanos</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Carla Ribeiro</td>
+                    <td>3B</td>
+                    <td>106</td>
+                    <td>Contabilidade</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Rafael Almeida</td>
+                    <td>4A</td>
+                    <td>107</td>
+                    <td>Contabilidade e gestão</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Isabela Costa</td>
+                    <td>4B</td>
+                    <td>108</td>
+                    <td>Contabilidade e gestão</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Felipe Araújo</td>
+                    <td>5A</td>
+                    <td>109</td>
+                    <td>Contabilidade</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Laura Mendes</td>
+                    <td>5B</td>
+                    <td>110</td>
+                    <td>Informática de Gestão </td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+

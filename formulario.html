@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4fdf4;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #2e7d32;
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size:2.2rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #a5d6a7;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #2e7d32;
+        }
+
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .form-section img {
+            max-width: 150px;
+            border-radius: 10px;
+            border: 2px solid #2e7d32;
+        }
+
+        .form-section .info {
+            text-align: center;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .form-section .info p {
+            margin: 0.3rem 0;
+        }
+
+        .form-section form {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-section form label {
+            font-size: 1rem;
+            color: #2e7d32;
+        }
+
+        .form-section form input {
+            padding: 0.5rem;
+            font-size: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-section form button {
+            padding: 0.7rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #2e7d32;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-section form button:hover {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="formulario.html">Formulário</a>
+        <a href="dados_alunos.html">Dados dos Alunos</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="disciplinas.html">Disciplinas</a>
+    </nav>
+
+    <section id="formulario" class="form-section">
+        <img src="Imagens/Imagem WhatsApp 2024-12-11 às 14.29.32_0f27d4ca.jpg" alt="Foto do aluno Paulo Lauriano Gonçalves">
+        <div class="info">
+            <p><strong>Nome:</strong> Paulo Lauriano Gonçalves</p>
+            <p><strong>Sala:</strong> 9</p>
+            <p><strong>Número:</strong> 24</p>
+            <p><strong>Processo:</strong> 14661</p>
+        </div>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome">
+
+            <label for="sala">Sala:</label>
+            <input type="text" id="sala" name="sala" placeholder="Digite a sala">
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" placeholder="Digite o número">
+
+            <label for="processo">Processo:</label>
+            <input type="text" id="processo" name="processo" placeholder="Digite o número do processo">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+   
+</body>
+</html>
